@@ -1,0 +1,855 @@
+@import "./mixin";
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200&family=Open+Sans:wght@300&family=Poiret+One&family=Poppins:wght@100;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200&family=Nunito:wght@200;300;400;500;600;900&family=Open+Sans:wght@300&family=Poiret+One&family=Poppins:wght@100;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&family=Mulish:wght@200&family=Nunito:wght@200;300;400;500;600;900&family=Open+Sans:wght@300&family=Poiret+One&family=Poppins:wght@100;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&family=Mulish:wght@200&family=Nunito:wght@200;300;400;500;600;900&family=Open+Sans:wght@300&family=Poiret+One&family=Poppins:wght@100;300;400;500;600&family=Roboto:wght@400;500;700&display=swap");
+
+$gray-color: #878a9d;
+$Montserrat: "Montserrat", sans-serif;
+$Nunito: "Nunito", sans-serif;
+$Roboto: "Roboto", sans-serif;
+
+* {
+  font-family: $Nunito;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+a:link {
+  color: #565656;
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+html {
+  font-size: 10px;
+  overflow-x: hidden;
+}
+
+// Header top section Start
+.header_top_section {
+  background-color: rgb(6, 0, 29);
+  .header {
+    &_icons {
+      padding: 0 1rem;
+      color: #556bb3;
+    }
+    &_top {
+      padding: 1rem;
+    }
+    &_info {
+      &_text {
+        font-family: $Nunito;
+        color: #76708a;
+        font-size: 1.3em;
+        line-height: 1.5em;
+        padding: 0 1rem;
+      }
+    }
+    .header_hidden {
+      display: none;
+    }
+  }
+}
+// Header top section End
+
+// Header bottom section start
+.header {
+  position: sticky;
+  z-index: 999;
+  top: 0;
+}
+.header_bottom_section {
+  .header_bottom {
+    @include d-flex(flex, row, space-between, center);
+    width: 100%;
+    background-color: white;
+    padding: 10px 4%;
+
+    .icon_prop {
+      margin-left: 15px;
+    }
+
+    .nav {
+      @include d-flex(flex, row, center, center);
+
+      &_container {
+        @include d-flex(flex, row, center, center);
+        font-size: 1.5rem;
+        list-style-type: none;
+
+        &_item {
+          padding: 0 5px;
+          line-height: 5.6rem;
+          margin-left: 1.5rem;
+          border-bottom: 1px solid transparent;
+          color: #565656;
+          &:hover {
+            border-color: #565656;
+          }
+        }
+      }
+    }
+    .icon_bars {
+      display: none;
+    }
+  }
+}
+// Header section end
+
+//Banner section Start
+.banner_section {
+  @include d-bg(url(https://anpsthemes.com/ident/demo-5/wp-content/uploads/2020/01/bg.jpg));
+
+  .banner_image {
+    flex: 1;
+    &_item {
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+  .banner {
+    @include d-flex(flex, row, space-between, center);
+    color: rgb(255, 255, 255);
+    &_container {
+      flex: 1;
+    }
+    &_title {
+      font-family: $Montserrat;
+      font-weight: 700;
+      line-height: 1.6em;
+      font-size: 5.2em;
+    }
+    &_text {
+      flex: 1;
+      // margin: 3rem 0;
+      font-family: $Montserrat;
+      line-height: 2.6em;
+      font-weight: 500;
+      font-size: 1.8rem;
+    }
+    &_contact {
+      @include d-flex(flex, row, flex-start, center);
+      margin-top: 2rem;
+      &_info {
+        color: rgb(255, 255, 255);
+        font-family: $Roboto;
+        line-height: 1.5em;
+        font-weight: 700;
+        font-size: 2em;
+        margin-right: 2rem;
+      }
+      &_icon {
+        margin: 0 2rem;
+      }
+    }
+  }
+}
+//Banner section End
+
+// Info box section start
+.info_section {
+  z-index: 8;
+  .info_box {
+    @include d-flex(flex, column, _, flex-start);
+    flex: 1;
+    margin: 0 10px;
+    background-color: white;
+    padding: 4rem 3rem;
+
+    &_title_icon {
+      @include d-flex(flex, row, center, center);
+      margin-bottom: 3rem;
+    }
+    &_title {
+      color: #0a0a0a;
+      font-weight: 600;
+      font-family: $Montserrat;
+      font-size: 1.8em;
+      line-height: 2em;
+    }
+    &_text {
+      color: $gray-color;
+      font-family: $Nunito;
+      font-size: 1.6em;
+      line-height: 2em;
+      margin-bottom: 2rem;
+    }
+    &_button {
+      text-transform: uppercase;
+      line-height: 3em;
+      font-family: $Nunito;
+      font-size: 1.6em;
+      color: #383e48;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    &_icon {
+      color: rgb(51, 37, 119);
+      margin-right: 2rem;
+    }
+  }
+}
+// Info box section end
+
+// All service section Start
+.all_service {
+  text-align: center;
+  color: $gray-color;
+  font-size: 1.6rem;
+  line-height: 3rem;
+  font-family: $Nunito;
+  font-weight: 700;
+  padding-bottom: 10rem;
+}
+// All service section End
+
+// Tooth -white section Start
+.twhite {
+  &_image {
+    @include d-bg(
+      url(./iDent\ Demo\ 5\ –\ Just\ another\ WordPress\ site\ -\ Google\ Chrome\ 2_6_2023\ 12_17_54\ PM.png)
+    );
+    padding: 1.5rem 3rem;
+  }
+
+  .twhite_info {
+    @include d-flex(flex, column, center, flex-start);
+    &_title {
+      font-size: 2.8em;
+      font-family: $Montserrat;
+      font-weight: 600;
+      color: #332577;
+    }
+    &_text {
+      font-family: $Nunito;
+      font-size: 1.6em;
+      color: #878a9d;
+      line-height: 2.2em;
+    }
+    &_check {
+      @include d-flex(flex, row, center, center);
+      &_icon {
+        color: green;
+        margin-right: 1rem;
+      }
+    }
+  }
+}
+//Tooth -white section Start
+
+// Call Phone section Start
+.call_phone {
+  @include d-bg(url(https://anpsthemes.com/ident/demo-5/wp-content/uploads/2020/01/bg2.jpg));
+  margin: 2rem 0;
+  &_text {
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 2.5rem;
+    font-size: 2.6em;
+    font-family: $Montserrat;
+    padding: 5rem 0;
+  }
+}
+// Call Phone section End
+
+// Service section start
+.service_section {
+  margin: 3rem 0;
+  .service_wrapper {
+    .service {
+      &_content {
+        &_title {
+          font-family: $Nunito;
+          font-weight: 600;
+          margin-bottom: 2rem;
+          line-height: 1.2em;
+          font-size: 2.8em;
+        }
+
+        &_text {
+          font-family: "Nunito", sans-serif;
+          font-size: 1.6em;
+          color: #878a9d;
+          line-height: 2.3em;
+          margin-bottom: 4rem;
+        }
+      }
+      &_info {
+        &_box {
+          @include d-flex(flex, row, center, flex-start);
+          &_article {
+            margin-left: 2rem;
+            &_title {
+              font-weight: 600;
+              font-size: 1.8em;
+              line-height: 1.2em;
+              font-family: $Montserrat;
+              margin-bottom: 1.5rem;
+              color: #143e78;
+            }
+            &_text {
+              font-family: "Nunito", sans-serif;
+              font-size: 1.6em;
+              color: #878a9d;
+              line-height: 2.3em;
+              padding-bottom: 4rem;
+            }
+          }
+        }
+
+        &_left_side {
+          @include d-flex(flex, column, center, center);
+          margin-right: 4rem;
+        }
+        &_right_side {
+          @include d-flex(flex, column, center, center);
+        }
+      }
+    }
+  }
+}
+// Service section end
+
+// Request section Start
+.request_section {
+  @include d-bg(url(https://anpsthemes.com/ident/demo-5/wp-content/uploads/2020/01/bg2.jpg));
+  &_center {
+    @include d-flex(flex, column, center, center);
+  }
+  &_wrapper {
+    padding: 4rem 0;
+    gap: 2rem;
+  }
+  .request_content {
+    font-family: $Montserrat;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    &_title {
+      font-size: 2.6em;
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+      line-height: 1.4em;
+    }
+    &_text {
+      font-weight: 400;
+      line-height: 1.6em;
+      font-size: 1.8em;
+    }
+  }
+  &_button {
+    border-color: #ffffff;
+    color: #ffffff;
+    border-radius: 5px;
+    border-width: 2px;
+    padding: 1.4rem 4rem;
+    background-color: transparent;
+    font-family: $Nunito;
+    font-weight: 400;
+    line-height: 2.2em;
+    &:hover {
+      background-color: #ffffff;
+      color: #535eaa;
+    }
+  }
+}
+// Request section End
+
+// Our doctors section Start
+.doctor_section {
+  background-color: #f8fafc;
+  padding: 4rem 0;
+
+  margin: 5rem 0;
+  &_wrapper {
+    @include d-flex(flex, column, center, center);
+  }
+  &_title {
+    font-weight: 600;
+    line-height: 1.2em;
+    margin-bottom: 2rem;
+    font-size: 2.8em;
+    font-family: $Montserrat;
+    text-align: center;
+    color: rgb(20, 62, 120);
+  }
+  &_box {
+    &_item {
+      background-color: #fff;
+      width: 22%;
+
+      .doctor_john {
+        @include d-bg(url(https://anpsthemes.com/ident/demo-5/wp-content/uploads/2018/03/dent1.jpg));
+      }
+      .doctor_kelly {
+        @include d-bg(url(https://anpsthemes.com/ident/demo-5/wp-content/uploads/2018/03/dent2.jpg));
+      }
+      .doctor_alice {
+        @include d-bg(url(https://anpsthemes.com/ident/demo-5/wp-content/uploads/2018/03/dent3.jpg));
+      }
+      .doctor_ben {
+        @include d-bg(url(https://anpsthemes.com/ident/demo-5/wp-content/uploads/2018/03/dent4.jpg));
+      }
+      .doctor_name {
+        color: rgb(20, 62, 120);
+        font-family: $Nunito;
+        font-weight: 700;
+        font-size: 2em;
+        line-height: 2.8em;
+        text-align: center;
+      }
+      .doctor_proffesion {
+        color: rgb(135, 138, 157);
+        font-family: $Nunito;
+        font-weight: 700;
+        font-size: 1.6em;
+        line-height: 2em;
+        text-align: center;
+        margin: 0.5rem 0;
+      }
+    }
+  }
+}
+// Our doctors section End
+
+// Form section Start
+.form_section {
+  .form_content {
+    &_title {
+      font-weight: 600;
+      line-height: 1.2em;
+      margin-bottom: 2rem;
+      font-size: 2.8em;
+      font-family: $Montserrat;
+      text-align: center;
+      color: rgb(20, 62, 120);
+    }
+    &_text {
+      font-family: "Nunito", sans-serif;
+      font-size: 1.6em;
+      color: #878a9d;
+      line-height: 2.3em;
+      margin-bottom: 4rem;
+      text-align: center;
+    }
+  }
+  .input {
+    @include d-flex(flex, column, center, center);
+    &_item {
+      width: 100%;
+      padding: 1rem;
+      margin: 1rem;
+      color: rgb(135, 138, 157);
+      border: 1px rgb(135, 138, 157) solid;
+      font-size: 1.6em;
+      line-height: 1.8em;
+      border-radius: 5px;
+    }
+  }
+  .form_agree_text {
+    font-family: "Nunito", sans-serif;
+    font-size: 1.6em;
+    color: #878a9d;
+    line-height: 2.3em;
+    margin-bottom: 4rem;
+    margin-left: 0.8rem;
+  }
+  .form_submit_button {
+    padding: 1.4rem 4rem;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #535eaa, #626db5);
+  }
+}
+// Form section End
+
+// Feature section Start
+.feature_section {
+  &_prop {
+    @include d-bg(url(https://anpsthemes.com/ident/demo-5/wp-content/uploads/2020/01/bg2.jpg?id=4145));
+    width: 100%;
+    height: auto;
+
+    .feature_content {
+      width: 80%;
+      color: rgb(255, 255, 255);
+      text-align: left;
+      padding: 0 3rem 3rem 3rem;
+      &_title {
+        font-weight: 600;
+        margin-bottom: 2rem;
+        font-family: $Montserrat;
+        font-size: 2.8em;
+        line-height: 3em;
+      }
+      &_text {
+        font-size: 1.6em;
+        font-family: $Nunito;
+        line-height: 2em;
+        margin-bottom: 3rem;
+        color: rgb(255, 255, 255);
+      }
+    }
+  }
+
+  .feature_content_wrapper_bottom {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .feature_content_bottom {
+    text-align: right;
+  }
+  .feature_section_top_image,
+  .feature_section_bottom_image {
+    max-width: 100%;
+  }
+}
+// Feature section End
+
+// ident_info section Start
+.ident_info_section {
+  margin: 4rem 0;
+  .ident_info {
+    &_item {
+      padding: 1rem;
+    }
+    &_title {
+      font-weight: 600;
+      margin-bottom: 1.6rem;
+      color: rgb(20, 62, 120);
+      font-size: 2.2em;
+      font-family: $Montserrat;
+      line-height: 1.2em;
+    }
+    &_text {
+      font-family: "Nunito", sans-serif;
+      font-size: 1.6em;
+      color: #878a9d;
+      line-height: 2.3em;
+    }
+  }
+}
+// ident_info section End
+
+// Google Maps section Start
+.ident_location {
+  margin: 4rem 0;
+}
+// Google Maps section End
+
+// Contact section Start
+.contact_section {
+  .contact_info {
+    @include d-flex(flex, row, space-between, baseline);
+    &_item {
+      flex: 1;
+      &_title {
+        font-weight: 600;
+        margin-bottom: 1.6rem;
+        color: rgb(20, 62, 120);
+        font-size: 2.2em;
+        font-family: $Montserrat;
+        line-height: 1.2em;
+      }
+      &_text {
+        font-family: "Nunito", sans-serif;
+        font-size: 1.6em;
+        color: #878a9d;
+        line-height: 2.3em;
+      }
+      &_icon {
+        padding-left: 1rem;
+      }
+    }
+  }
+  .contact_icon_prop {
+    @include d-flex(flex, row, flex-start, center);
+    font-family: "Nunito", sans-serif;
+    font-size: 1.6em;
+    color: #878a9d;
+    line-height: 2.3em;
+  }
+  .contact_info_item_phone {
+    padding-right: 14rem;
+  }
+}
+// Contact section End
+
+.copyright_section p {
+  color: rgb(146, 148, 163);
+  text-align: center;
+  font-size: 2em;
+  font-family: $Nunito;
+  padding: 4rem 0;
+}
+
+@media only screen and (min-width: 576px) and (max-width: 1200px) {
+  .header_bottom {
+    .nav_container {
+      display: none;
+    }
+    .icon_bars {
+      display: block;
+    }
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .banner_image {
+    display: none;
+  }
+  .banner_container {
+    padding: 2rem 0;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 992px) {
+  .doctor_section_box_hidden {
+    display: none;
+  }
+  .doctor_container_property {
+    width: 84%;
+    margin: 0 auto;
+  }
+  .doctor_section_box {
+    width: 100%;
+    @include d-flex(flex, row, space-between, center);
+  }
+  .doctor_section_box_item {
+    width: 44%;
+  }
+  .doctor_image_prop {
+    width: auto;
+    height: 36rem;
+  }
+  .header_top {
+    @include d-flex(flex, _, center, _);
+  }
+  .header_hidden {
+    display: flex;
+  }
+
+  .header_info,
+  .header_social_media {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  html {
+    font-size: 8px;
+  }
+  .container {
+    max-width: 100%;
+  }
+  .container_property {
+    width: 90%;
+    margin: 0 auto;
+    pad: 0 15px;
+  }
+  .banner_container {
+    font-size: 5px;
+  }
+  .box_container {
+    font-size: 9px;
+  }
+  .info_section {
+    position: relative;
+    top: 2rem;
+  }
+  .twhite_wrapper {
+    @include d-flex(flex, column, space-between, center);
+    gap: 3rem;
+  }
+  .twhite_info {
+    font-size: 9px;
+    width: 80%;
+  }
+  .twhite_image {
+    width: 80%;
+    min-height: 30rem;
+  }
+  .call_phone_container {
+    font-size: 8px;
+  }
+  .service_wrapper {
+    @include d-flex(flex, column, center, center);
+  }
+  .service {
+    width: 100%;
+    font-size: 10px;
+  }
+  .service_info {
+    @include d-flex(flex, column, _, flex-start);
+  }
+  .request_section_wrapper {
+    @include d-flex(flex, column, space-between, flex-start);
+  }
+  .input_container {
+    @include d-flex(flex, column, center, center);
+  }
+  .form_container {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 10px;
+  }
+  .input_submit_checkbox {
+    @include d-flex(flex, row, space-between, baseline);
+  }
+  .input_check-box {
+    @include d-flex(flex, row, space-between, baseline);
+  }
+  .input {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .box_container {
+    @include d-flex(flex, column, center, center);
+    gap: 2rem;
+  }
+  .twhite_image {
+    width: 80%;
+    min-height: 44rem;
+  }
+  .info_section {
+    position: relative;
+    top: -8rem;
+  }
+  .service_info {
+    @include d-flex(flex, row, space-between, center);
+  }
+  .request_section_wrapper {
+    @include d-flex(flex, row, space-between, center);
+  }
+  .ident_info {
+    @include d-flex(flex, row, space-between, center);
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .info_section {
+    position: relative;
+    top: -4rem;
+  }
+  .banner_container {
+    font-size: 7px;
+  }
+  .box_container {
+    @include d-flex(flex, row, space-between, normal);
+    font-size: 8px;
+  }
+  .call_phone_container {
+    font-size: 10px;
+  }
+  .container_property {
+    width: 73%;
+    margin: 0 auto;
+    pad: 0 15px;
+  }
+  .doctor_section_box {
+    width: 100%;
+    @include d-flex(flex, row, space-between, center);
+  }
+  .doctor_section_wrapper {
+    width: 83%;
+    margin: 0 auto;
+  }
+  .doctor_image_prop {
+    width: auto;
+    height: 30rem;
+  }
+  .form_container {
+    width: 73%;
+    margin: 0 auto;
+  }
+  .input {
+    width: 46%;
+  }
+  .input_container {
+    @include d-flex(flex, row, space-between, baseline);
+  }
+  .feature_section_top,
+  .feature_section_bottom {
+    @include d-flex(flex, row, center, center);
+    &_image {
+      width: 50%;
+    }
+    &_content {
+      width: 25%;
+    }
+  }
+  .feature_content_wrapper {
+    width: 50%;
+  }
+  .header_hidden {
+    display: none;
+  }
+  .header_info,
+  .header_social_media {
+    @include d-flex(flex, row, center, center);
+  }
+  .header_top {
+    @include d-flex(flex, row, space-between, center);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .banner_container {
+    font-size: 6px;
+  }
+  .box_container {
+    font-size: 8px;
+  }
+  .icon_bars {
+    display: none;
+  }
+  .twhite_info {
+    font-size: 10px;
+    width: 44%;
+  }
+  .twhite_wrapper {
+    @include d-flex(flex, row, space-between, center);
+  }
+  .twhite_image {
+    width: 50%;
+    height: 48rem;
+  }
+  .service {
+    width: 68%;
+  }
+  .service_wrapper {
+    @include d-bg(url(https://anpsthemes.com/ident/demo-5/wp-content/uploads/2020/01/doc2.jpg?id=4167));
+    background-size: contain;
+    background-position: right;
+    display: block;
+  }
+  .form_container {
+    width: 56%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  html {
+    font-size: 10px;
+  }
+  .banner_container {
+    font-size: 8px;
+  }
+  .box_container {
+    font-size: 10px;
+  }
+  .twhite_info {
+    font-size: 10px;
+  }
+}

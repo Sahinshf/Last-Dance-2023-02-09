@@ -1,0 +1,915 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200&family=Open+Sans:wght@300&family=Poiret+One&family=Poppins:wght@100;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200&family=Nunito:wght@200;300;400;500;600;900&family=Open+Sans:wght@300&family=Poiret+One&family=Poppins:wght@100;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&family=Mulish:wght@200&family=Nunito:wght@200;300;400;500;600;900&family=Open+Sans:wght@300&family=Poiret+One&family=Poppins:wght@100;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&family=Mulish:wght@200&family=Nunito:wght@200;300;400;500;600;900&family=Open+Sans:wght@300&family=Poiret+One&family=Poppins:wght@100;300;400;500;600&family=Roboto:wght@400;500;700&display=swap");
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+a:link {
+  color: #565656;
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+html {
+  font-size: 10px;
+  overflow-x: hidden;
+}
+
+.header_top_section {
+  background-color: rgb(6, 0, 29);
+}
+.header_top_section .header_icons {
+  padding: 0 1rem;
+  color: #556bb3;
+}
+.header_top_section .header_top {
+  padding: 1rem;
+}
+.header_top_section .header_info_text {
+  font-family: "Nunito", sans-serif;
+  color: #76708a;
+  font-size: 1.3em;
+  line-height: 1.5em;
+  padding: 0 1rem;
+}
+.header_top_section .header .header_hidden {
+  display: none;
+}
+
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 999;
+  top: 0;
+}
+
+.header_bottom_section .header_bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+  padding: 10px 4%;
+}
+.header_bottom_section .header_bottom .icon_prop {
+  margin-left: 15px;
+}
+.header_bottom_section .header_bottom .nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.header_bottom_section .header_bottom .nav_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  list-style-type: none;
+}
+.header_bottom_section .header_bottom .nav_container_item {
+  padding: 0 5px;
+  line-height: 5.6rem;
+  margin-left: 1.5rem;
+  border-bottom: 1px solid transparent;
+  color: #565656;
+}
+.header_bottom_section .header_bottom .nav_container_item:hover {
+  border-color: #565656;
+}
+.header_bottom_section .header_bottom .icon_bars {
+  display: none;
+}
+
+.banner_section {
+  background: url(https://anpsthemes.com/ident/demo-5/wp-content/uploads/2020/01/bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner_section .banner_image {
+  flex: 1;
+}
+.banner_section .banner_image_item {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+.banner_section .banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(255, 255, 255);
+}
+.banner_section .banner_container {
+  flex: 1;
+}
+.banner_section .banner_title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  line-height: 1.6em;
+  font-size: 5.2em;
+}
+.banner_section .banner_text {
+  flex: 1;
+  font-family: "Montserrat", sans-serif;
+  line-height: 2.6em;
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+.banner_section .banner_contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 2rem;
+}
+.banner_section .banner_contact_info {
+  color: rgb(255, 255, 255);
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5em;
+  font-weight: 700;
+  font-size: 2em;
+  margin-right: 2rem;
+}
+.banner_section .banner_contact_icon {
+  margin: 0 2rem;
+}
+
+.info_section {
+  z-index: 8;
+}
+.info_section .info_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: _;
+  align-items: flex-start;
+  flex: 1;
+  margin: 0 10px;
+  background-color: white;
+  padding: 4rem 3rem;
+}
+.info_section .info_box_title_icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.info_section .info_box_title {
+  color: #0a0a0a;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8em;
+  line-height: 2em;
+}
+.info_section .info_box_text {
+  color: #878a9d;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.6em;
+  line-height: 2em;
+  margin-bottom: 2rem;
+}
+.info_section .info_box_button {
+  text-transform: uppercase;
+  line-height: 3em;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.6em;
+  color: #383e48;
+  font-weight: 600;
+  cursor: pointer;
+}
+.info_section .info_box_icon {
+  color: rgb(51, 37, 119);
+  margin-right: 2rem;
+}
+
+.all_service {
+  text-align: center;
+  color: #878a9d;
+  font-size: 1.6rem;
+  line-height: 3rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  padding-bottom: 10rem;
+}
+
+.twhite_image {
+  background: url(./iDent\ Demo\ 5\ –\ Just\ another\ WordPress\ site\ -\ Google\ Chrome\ 2_6_2023\ 12_17_54\ PM.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1.5rem 3rem;
+}
+.twhite .twhite_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.twhite .twhite_info_title {
+  font-size: 2.8em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #332577;
+}
+.twhite .twhite_info_text {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.6em;
+  color: #878a9d;
+  line-height: 2.2em;
+}
+.twhite .twhite_info_check {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.twhite .twhite_info_check_icon {
+  color: green;
+  margin-right: 1rem;
+}
+
+.call_phone {
+  background: url(https://anpsthemes.com/ident/demo-5/wp-content/uploads/2020/01/bg2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 2rem 0;
+}
+.call_phone_text {
+  text-align: center;
+  color: white;
+  font-weight: 400;
+  margin-bottom: 2.5rem;
+  font-size: 2.6em;
+  font-family: "Montserrat", sans-serif;
+  padding: 5rem 0;
+}
+
+.service_section {
+  margin: 3rem 0;
+}
+.service_section .service_wrapper .service_content_title {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  line-height: 1.2em;
+  font-size: 2.8em;
+}
+.service_section .service_wrapper .service_content_text {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.6em;
+  color: #878a9d;
+  line-height: 2.3em;
+  margin-bottom: 4rem;
+}
+.service_section .service_wrapper .service_info_box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+.service_section .service_wrapper .service_info_box_article {
+  margin-left: 2rem;
+}
+.service_section .service_wrapper .service_info_box_article_title {
+  font-weight: 600;
+  font-size: 1.8em;
+  line-height: 1.2em;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 1.5rem;
+  color: #143e78;
+}
+.service_section .service_wrapper .service_info_box_article_text {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.6em;
+  color: #878a9d;
+  line-height: 2.3em;
+  padding-bottom: 4rem;
+}
+.service_section .service_wrapper .service_info_left_side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 4rem;
+}
+.service_section .service_wrapper .service_info_right_side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.request_section {
+  background: url(https://anpsthemes.com/ident/demo-5/wp-content/uploads/2020/01/bg2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.request_section_center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.request_section_wrapper {
+  padding: 4rem 0;
+  gap: 2rem;
+}
+.request_section .request_content {
+  font-family: "Montserrat", sans-serif;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+.request_section .request_content_title {
+  font-size: 2.6em;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  line-height: 1.4em;
+}
+.request_section .request_content_text {
+  font-weight: 400;
+  line-height: 1.6em;
+  font-size: 1.8em;
+}
+.request_section_button {
+  border-color: #ffffff;
+  color: #ffffff;
+  border-radius: 5px;
+  border-width: 2px;
+  padding: 1.4rem 4rem;
+  background-color: transparent;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  line-height: 2.2em;
+}
+.request_section_button:hover {
+  background-color: #ffffff;
+  color: #535eaa;
+}
+
+.doctor_section {
+  background-color: #f8fafc;
+  padding: 4rem 0;
+  margin: 5rem 0;
+}
+.doctor_section_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.doctor_section_title {
+  font-weight: 600;
+  line-height: 1.2em;
+  margin-bottom: 2rem;
+  font-size: 2.8em;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  color: rgb(20, 62, 120);
+}
+.doctor_section_box_item {
+  background-color: #fff;
+  width: 22%;
+}
+.doctor_section_box_item .doctor_john {
+  background: url(https://anpsthemes.com/ident/demo-5/wp-content/uploads/2018/03/dent1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.doctor_section_box_item .doctor_kelly {
+  background: url(https://anpsthemes.com/ident/demo-5/wp-content/uploads/2018/03/dent2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.doctor_section_box_item .doctor_alice {
+  background: url(https://anpsthemes.com/ident/demo-5/wp-content/uploads/2018/03/dent3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.doctor_section_box_item .doctor_ben {
+  background: url(https://anpsthemes.com/ident/demo-5/wp-content/uploads/2018/03/dent4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.doctor_section_box_item .doctor_name {
+  color: rgb(20, 62, 120);
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 2em;
+  line-height: 2.8em;
+  text-align: center;
+}
+.doctor_section_box_item .doctor_proffesion {
+  color: rgb(135, 138, 157);
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 1.6em;
+  line-height: 2em;
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+.form_section .form_content_title {
+  font-weight: 600;
+  line-height: 1.2em;
+  margin-bottom: 2rem;
+  font-size: 2.8em;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  color: rgb(20, 62, 120);
+}
+.form_section .form_content_text {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.6em;
+  color: #878a9d;
+  line-height: 2.3em;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+.form_section .input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form_section .input_item {
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem;
+  color: rgb(135, 138, 157);
+  border: 1px rgb(135, 138, 157) solid;
+  font-size: 1.6em;
+  line-height: 1.8em;
+  border-radius: 5px;
+}
+.form_section .form_agree_text {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.6em;
+  color: #878a9d;
+  line-height: 2.3em;
+  margin-bottom: 4rem;
+  margin-left: 0.8rem;
+}
+.form_section .form_submit_button {
+  padding: 1.4rem 4rem;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  background-image: linear-gradient(to right, #535eaa, #626db5);
+}
+
+.feature_section_prop {
+  background: url(https://anpsthemes.com/ident/demo-5/wp-content/uploads/2020/01/bg2.jpg?id=4145);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+.feature_section_prop .feature_content {
+  width: 80%;
+  color: rgb(255, 255, 255);
+  text-align: left;
+  padding: 0 3rem 3rem 3rem;
+}
+.feature_section_prop .feature_content_title {
+  font-weight: 600;
+  margin-bottom: 2rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.8em;
+  line-height: 3em;
+}
+.feature_section_prop .feature_content_text {
+  font-size: 1.6em;
+  font-family: "Nunito", sans-serif;
+  line-height: 2em;
+  margin-bottom: 3rem;
+  color: rgb(255, 255, 255);
+}
+.feature_section .feature_content_wrapper_bottom {
+  display: flex;
+  justify-content: flex-end;
+}
+.feature_section .feature_content_bottom {
+  text-align: right;
+}
+.feature_section .feature_section_top_image,
+.feature_section .feature_section_bottom_image {
+  max-width: 100%;
+}
+
+.ident_info_section {
+  margin: 4rem 0;
+}
+.ident_info_section .ident_info_item {
+  padding: 1rem;
+}
+.ident_info_section .ident_info_title {
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+  color: rgb(20, 62, 120);
+  font-size: 2.2em;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.2em;
+}
+.ident_info_section .ident_info_text {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.6em;
+  color: #878a9d;
+  line-height: 2.3em;
+}
+
+.ident_location {
+  margin: 4rem 0;
+}
+
+.contact_section .contact_info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.contact_section .contact_info_item {
+  flex: 1;
+}
+.contact_section .contact_info_item_title {
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+  color: rgb(20, 62, 120);
+  font-size: 2.2em;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.2em;
+}
+.contact_section .contact_info_item_text {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.6em;
+  color: #878a9d;
+  line-height: 2.3em;
+}
+.contact_section .contact_info_item_icon {
+  padding-left: 1rem;
+}
+.contact_section .contact_icon_prop {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.6em;
+  color: #878a9d;
+  line-height: 2.3em;
+}
+.contact_section .contact_info_item_phone {
+  padding-right: 14rem;
+}
+
+.copyright_section p {
+  color: rgb(146, 148, 163);
+  text-align: center;
+  font-size: 2em;
+  font-family: "Nunito", sans-serif;
+  padding: 4rem 0;
+}
+
+@media only screen and (min-width: 576px) and (max-width: 1200px) {
+  .header_bottom .nav_container {
+    display: none;
+  }
+  .header_bottom .icon_bars {
+    display: block;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .banner_image {
+    display: none;
+  }
+  .banner_container {
+    padding: 2rem 0;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 992px) {
+  .doctor_section_box_hidden {
+    display: none;
+  }
+  .doctor_container_property {
+    width: 84%;
+    margin: 0 auto;
+  }
+  .doctor_section_box {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .doctor_section_box_item {
+    width: 44%;
+  }
+  .doctor_image_prop {
+    width: auto;
+    height: 36rem;
+  }
+  .header_top {
+    display: flex;
+    flex-direction: _;
+    justify-content: center;
+    align-items: _;
+  }
+  .header_hidden {
+    display: flex;
+  }
+  .header_info,
+.header_social_media {
+    display: none;
+  }
+}
+@media only screen and (min-width: 576px) {
+  html {
+    font-size: 8px;
+  }
+  .container {
+    max-width: 100%;
+  }
+  .container_property {
+    width: 90%;
+    margin: 0 auto;
+    pad: 0 15px;
+  }
+  .banner_container {
+    font-size: 5px;
+  }
+  .box_container {
+    font-size: 9px;
+  }
+  .info_section {
+    position: relative;
+    top: 2rem;
+  }
+  .twhite_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+  }
+  .twhite_info {
+    font-size: 9px;
+    width: 80%;
+  }
+  .twhite_image {
+    width: 80%;
+    min-height: 30rem;
+  }
+  .call_phone_container {
+    font-size: 8px;
+  }
+  .service_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .service {
+    width: 100%;
+    font-size: 10px;
+  }
+  .service_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: _;
+    align-items: flex-start;
+  }
+  .request_section_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .input_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .form_container {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 10px;
+  }
+  .input_submit_checkbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .input_check-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .input {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .box_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .twhite_image {
+    width: 80%;
+    min-height: 44rem;
+  }
+  .info_section {
+    position: relative;
+    top: -8rem;
+  }
+  .service_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .request_section_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .ident_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .info_section {
+    position: relative;
+    top: -4rem;
+  }
+  .banner_container {
+    font-size: 7px;
+  }
+  .box_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: normal;
+    font-size: 8px;
+  }
+  .call_phone_container {
+    font-size: 10px;
+  }
+  .container_property {
+    width: 73%;
+    margin: 0 auto;
+    pad: 0 15px;
+  }
+  .doctor_section_box {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .doctor_section_wrapper {
+    width: 83%;
+    margin: 0 auto;
+  }
+  .doctor_image_prop {
+    width: auto;
+    height: 30rem;
+  }
+  .form_container {
+    width: 73%;
+    margin: 0 auto;
+  }
+  .input {
+    width: 46%;
+  }
+  .input_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .feature_section_top,
+.feature_section_bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .feature_section_top_image,
+.feature_section_bottom_image {
+    width: 50%;
+  }
+  .feature_section_top_content,
+.feature_section_bottom_content {
+    width: 25%;
+  }
+  .feature_content_wrapper {
+    width: 50%;
+  }
+  .header_hidden {
+    display: none;
+  }
+  .header_info,
+.header_social_media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .header_top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .banner_container {
+    font-size: 6px;
+  }
+  .box_container {
+    font-size: 8px;
+  }
+  .icon_bars {
+    display: none;
+  }
+  .twhite_info {
+    font-size: 10px;
+    width: 44%;
+  }
+  .twhite_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .twhite_image {
+    width: 50%;
+    height: 48rem;
+  }
+  .service {
+    width: 68%;
+  }
+  .service_wrapper {
+    background: url(https://anpsthemes.com/ident/demo-5/wp-content/uploads/2020/01/doc2.jpg?id=4167);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: contain;
+    background-position: right;
+    display: block;
+  }
+  .form_container {
+    width: 56%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  html {
+    font-size: 10px;
+  }
+  .banner_container {
+    font-size: 8px;
+  }
+  .box_container {
+    font-size: 10px;
+  }
+  .twhite_info {
+    font-size: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */
