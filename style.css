@@ -898,6 +898,9 @@ html {
     width: 56%;
     margin: 0 auto;
   }
+  .doctor_image_prop:hover {
+    transform: scale(1.1);
+  }
 }
 @media only screen and (min-width: 1400px) {
   html {
